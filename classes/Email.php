@@ -38,7 +38,7 @@ class Email {
 
          $contenido = '<html>';
          $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='https://github.com/carloscesarcamilo/APPSALON_MVC/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+         $contenido .= "<p>Presiona aquí: <a href='https://github.com/carloscesarcamilo/APPSALON_MVC/views/auth/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
