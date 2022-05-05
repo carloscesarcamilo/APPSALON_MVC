@@ -24,7 +24,7 @@ class Email {
          $mail->isSMTP();
          $mail->Host = 'smtp.gmail.com';
          $mail->SMTPAuth = true;
-         $mail->Port = 2525;
+         $mail->Port = 587;
          $mail->Username = 'susicarlos4';
          $mail->Password = 'iabjcbitzwgqvjrq';
      
@@ -53,11 +53,11 @@ class Email {
         // create a new object
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
-        $mail->Username = '4ec54dfb980a42';
-        $mail->Password = 'ae938c99960f22';
+        $mail->Port = 587;
+        $mail->Username = 'susicarlos4';
+        $mail->Password = 'iabjcbitzwgqvjrq';
     
         $mail->setFrom('cuentas@appsalon.com');
         $mail->addAddress('susicarlos4@gmail.com', 'AppSalon.com');
