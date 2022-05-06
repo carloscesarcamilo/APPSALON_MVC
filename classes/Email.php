@@ -24,6 +24,7 @@ class Email {
          $mail->isSMTP();
          $mail->Host = '108.177.15.109';
          $mail->SMTPAuth = true;
+         $mail->SMTPSecure = 'ssl';
          $mail->Port = 587;
          $mail->Username = 'susicarlos4';
          $mail->Password = 'iabjcbitzwgqvjrq';
@@ -55,6 +56,7 @@ class Email {
         $mail->isSMTP();
         $mail->Host = '108.177.15.109';
         $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
         $mail->Port = 587;
         $mail->Username = 'susicarlos4';
         $mail->Password = 'iabjcbitzwgqvjrq';
