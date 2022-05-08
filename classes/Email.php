@@ -21,7 +21,7 @@ class Email {
 
          // create a new object
          $mail = new PHPMailer();
-         $mail->SMTPDebug = 2;
+         $mail->SMTPDebug = 0;
          $mail->isSMTP();
          $mail->Host = 'smtp.gmail.com';
          $mail->SMTPAuth = true;
@@ -31,7 +31,7 @@ class Email {
          $mail->SMTPSecure   = 'ssl';
      
          $mail->setFrom('susicarlos4@gmail.com');
-         $mail->addAddress('susicarlos4@gmail.com', 'AppSalon.com');
+         $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
@@ -57,12 +57,12 @@ class Email {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
+        $mail->Port = 587;
         $mail->Username = 'susicarlos4@gmail.com';
         $mail->Password = 'iabjcbitzwgqvjrq';
     
         $mail->setFrom('susicarlos4@gmail.com');
-        $mail->addAddress('susicarlos4@gmail.com', 'AppSalon.com');
+        $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
         $mail->Subject = 'Reestablece tu password';
 
         // Set HTML
