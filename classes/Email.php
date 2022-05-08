@@ -30,7 +30,7 @@ class Email {
          $mail->Password = 'iabjcbitzwgqvjrq';
          $mail->SMTPSecure   = 'ssl';
      
-         $mail->setFrom('susicarlos4@gmail.com');
+         $mail->setFrom('susicarlos4@gprotonmail.com');
          $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
@@ -62,7 +62,7 @@ class Email {
         $mail->Password = 'iabjcbitzwgqvjrq';
          $mail->SMTPSecure   = 'ssl';
     
-        $mail->setFrom('susicarlos4@gmail.com');
+        $mail->setFrom('susicarlos4@protonmail.com');
         $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
         $mail->Subject = 'Reestablece tu password';
 
