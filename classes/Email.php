@@ -60,6 +60,7 @@ class Email {
         $mail->Port = 587;
         $mail->Username = 'susicarlos4@gmail.com';
         $mail->Password = 'iabjcbitzwgqvjrq';
+         $mail->SMTPSecure   = 'ssl';
     
         $mail->setFrom('susicarlos4@gmail.com');
         $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
