@@ -21,16 +21,17 @@ class Email {
 
          // create a new object
          $mail = new PHPMailer();
+         $mail->SMTPDebug = 2;
          $mail->isSMTP();
-         $mail->Host = '108.177.15.109';
+         $mail->Host = 'smtp.gmail.com';
          $mail->SMTPAuth = true;
-         $mail->SMTPSecure = 'ssl';
          $mail->Port = 587;
-         $mail->Username = 'susicarlos4';
+         $mail->Username = 'appsalonmvc@gmail.com';
          $mail->Password = 'iabjcbitzwgqvjrq';
+         $mail->SMTPSecure   = 'ssl';
      
-         $mail->setFrom('susicarlos4@gmail.com');
-         $mail->addAddress('susicarlos4@gmail.com', 'AppSalon.com');
+         $mail->setFrom('appsalonmvc@gmail.com');
+         $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
@@ -39,7 +40,7 @@ class Email {
 
          $contenido = '<html>';
          $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='https://safe-beach-77372.herokuapp.com/views/auth/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+         $contenido .= "<p>Presiona aquí: <a href='https://arcane-stream-43691.herokuapp.com/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
@@ -54,15 +55,14 @@ class Email {
         // create a new object
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = '108.177.15.109';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port = 587;
-        $mail->Username = 'susicarlos4';
+        $mail->Port = 2525;
+        $mail->Username = 'appsalonmvc@gmail.com';
         $mail->Password = 'iabjcbitzwgqvjrq';
     
-        $mail->setFrom('susicarlos4@gmail.com');
-        $mail->addAddress('susicarlos4@gmail.com', 'AppSalon.com');
+        $mail->setFrom('appsalonmvc@gmail.com');
+        $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
         $mail->Subject = 'Reestablece tu password';
 
         // Set HTML
@@ -71,7 +71,7 @@ class Email {
 
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
-        $contenido .= "<p>Presiona aquí: <a href='https://safe-beach-77372.herokuapp.com/views/auth/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
+        $contenido .= "<p>Presiona aquí: <a href='https://arcane-stream-43691.herokuapp.com/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= '</html>';
         $mail->Body = $contenido;
