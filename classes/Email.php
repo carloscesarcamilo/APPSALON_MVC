@@ -23,15 +23,15 @@ class Email {
          $mail = new PHPMailer();
          $mail->SMTPDebug = 0;
          $mail->isSMTP();
-         $mail->Host = 'smtp.gmail.com';
+         $mail->Host = 'mail.privateemail.com';
          $mail->SMTPAuth = true;
          $mail->Port = 587;
-         $mail->Username = 'susicarlos4gmail.com';
-         $mail->Password = 'iabjcbitzwgqvjrq';
-         $mail->SMTPSecure   = 'ssl';
+         $mail->Username = 'appsalon@carloscamilodev.com';
+         $mail->Password = 'j8hwcrN2#';
+         $mail->SMTPSecure   = 'tls';
      
          $mail->setFrom('susicarlos4@gprotonmail.com');
-         $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
+         $mail->addAddress('appsalon@carloscamilodev.com', 'AppSalon.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
@@ -58,12 +58,12 @@ class Email {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Port = 587;
-        $mail->Username = 'susicarlos4@gmail.com';
-        $mail->Password = 'iabjcbitzwgqvjrq';
-         $mail->SMTPSecure   = 'ssl';
+        $mail->Username = 'appsalon@carloscamilodev.com';
+        $mail->Password = 'j8hwcrN2#';
+         $mail->SMTPSecure   = 'tls';
     
         $mail->setFrom('susicarlos4@protonmail.com');
-        $mail->addAddress('appsalonmvc@gmail.com', 'AppSalon.com');
+        $mail->addAddress('appsalon@carloscamilodev.com', 'AppSalon.com');
         $mail->Subject = 'Reestablece tu password';
 
         // Set HTML
@@ -81,3 +81,4 @@ class Email {
         $mail->send();
     }
 }
+
