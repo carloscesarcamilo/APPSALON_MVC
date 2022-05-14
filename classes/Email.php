@@ -56,10 +56,10 @@ class Email {
         $mail = new PHPMailer();
         $mail->isSMTP();
 		$mail->SMTPDebug  = 0;
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 		$mail->SMTPSecure = "tls";
-        $mail->Port = 2525;
+        $mail->Port = 587;
         $mail->Username = 'susicarlos4@gmail.com';
         $mail->Password = 'iabjcbitzwgqvjrq';
     
